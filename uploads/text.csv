@@ -1,0 +1,4 @@
+Date, Attack Type, Affected Systems, Description, Action Taken
+2025-02-01, Ransomware, File Servers, Files were encrypted by ransomware, Backup restoration in progress
+2025-02-03, Phishing, Email Servers, Phishing email impersonating HR, Reported to IT, user training scheduled
+2025-02-04, DDoS, Web Servers, Website unavailable due to DDoS attack, Traffic filtering in place, systems restored

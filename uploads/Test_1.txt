@@ -1,0 +1,10 @@
+Incident Report - Data Breach
+
+Date: 2025-02-05
+Attack Type: Phishing Attack
+Affected Systems: Email Servers, Internal HR Database
+Description: User credentials were compromised through a phishing email. Sensitive data was accessed by unauthorized parties.
+Actions Taken: 
+- Password reset initiated for affected accounts.
+- Investigation of compromised email server initiated.
+- Reported to the incident response team.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character set and responsive design -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page Title -->
+        <title>Cyber Risk Analyzer</title>
+         <!-- Link to external CSS stylesheet for styling -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <!-- Link to jQuery library for dynamic content and interactivity -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head> 
+    <body>
+        <!-- Main body content container -->
+        <div id="bodyDiv">
+            <!-- Fixed header with site title -->
+            <header id="fixed-header">
+                <h2>Cyber Risk Analyzer</h2>
+            </header>
+            <!-- Navigation bar with links to different sections of the site -->
+             <nav>
+                <ul>
+                    <li><a href="#home" data-description="The main landing page.">Home</a></li>
+                    <li><a href="#overview" data-description="A summary of features and functions">Overview</a></li>
+                    <li><a href="#risk-analysis" data-description="Analyse potential risks in your system">Risk Analysis</a></li>
+                    <li><a href="#reports" data-description="View detailed risk Reports">Reports</a></li>
+                    <li><a href="#recommendations" data-description="Get suggestions for improving security">Recommendations</a></li>
+                    <li><a href="#security-tools" data-description="Access helpful cybersecurity tools">Security Tools</a></li>
+                    <li><a href="#dashboard" data-description="Monitor your security metrics">Dashboard</a></li>                    
+                </ul>
+                <!-- Dropdown description for navigation items (hidden by default) -->
+                <div id="dropdown-description" class="dropdown">Decription</div>
+              </nav>
+              <!-- Sections-->
+              <!-- Image section for showcasing the Cyber Risk image -->
+              <section id="image-sect">
+                    <div class="image-container">
+                        <!-- Image displaying Cyber Risk image -->
+                        <img src="{{ url_for('static', filename='img/CyberRisk.jpg') }}" alt="CyberRisImage" class="image">
+                    </div>
+              </section>
+
+               <!-- File upload section where users can upload files for analysis -->
+              <section id="file-upload">
+                    <form action="/upload" method="POST" enctype="multipart/form-data" id="upload-form">
+                         <!-- Label and input field for file selection -->
+                        <label>Upload File: <input type="file" id="file-input" name="file"></label>
+                        <!-- Submit button for uploading the file -->
+                        <button type="submit" id="upload-button">Upload</button>
+                    </form>
+              </section>
+
+              <!-- Analysis summary section displaying results after file upload and analysis -->
+              <section id="analysis-summary">
+                    <h3>Analysis summary</h3>
+                    <div id="summary-content">
+                       <!-- Summary content will be dynamically inserted here -->
+                    </div>
+              </section>
+
+            </div>
+            
+        </div>
+
+        <!-- Link to external JavaScript file for interactivity -->
+        <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+    </body>
+</html>
